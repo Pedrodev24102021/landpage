@@ -20,7 +20,7 @@ html {
 }
 
 body {
-    background-img:url(doctor-examining-female-patients-face-from-cosmetic-treatment.jpg);
+    background-image:url(doctor-examining-female-patients-face-from-cosmetic-treatment.jpg);
     background-position: center center;
     background-size: cover; 
     background-position-y: 0px;
