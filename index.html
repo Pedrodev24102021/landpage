@@ -1,40 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3df637a2f2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>MB estetica personalizada</title>
-</head>
-<body>
+<html lang="pt-br">
 
-    <header>
-        <div class="menu-content">
-            <h1 class="logo"> MB estetica personalizda</h1>
-            <nav class="header-menu">
-                <ul class="list-itens">
-                    <li><a href="#">inicio</a></li>
-                    <li><a href="#">serviços</a></li>
-                    <li><a href="#">aulas</a></li>
-                    <li><a href="#">agenda</a></li>
-                    <li><a href="#">contatos</a></li>
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                </ul>
-            </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2? family=Bitter&family=Raleway:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header id="header">
+    <nav id="nav">
+      <h2>Pedro Henrique</h2>
+      <button id="btn-mobile">Menu</button>
+      <ul id="menu">
+        <li class="link-projetos"><a>Projetos</a></li>
+        <li class="link-curriculo"><a href="">Curriculo</a></li>
+        <li class="link-tech"><a>Tecnologias</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <main class="main">
+    <div class="conteudo">
+      <img src="./images/capa.jpg" id="img" alt="">
+      <h1 id="saida"></h1>
+    </div>
+  </main>
+  <section class="sectiontech">
+    <nav>
+      <nav class="conteudotech">
+        <div class="tecnologias">
+          <img src="./images/html.jpg" class="imgtech" alt="">
+          <aside>
+            <h3>HTML</h3>
+            <p style="max-width: 20ch;">o HTML é o componente base da web. Isso quer dizer que ele permite a construção de websites e a inserção de novos conteúdos, como imagens e vídeos, por meio dos hipertextos!</p>
+          </aside>
         </div>
-    </header>
-    <main>
-        <div class="main-content">
-            <h1 class="primary-text">Emagrecer Facil,rapido e saudavel!</h1>
-            <h2 class="second-text">SE INSCREVA AGORA E MUDE DE VIDA</h2>
-            <div class="btns">
-                <button class="btn-exp">Agendar consulta </button>
-                <button class="btn-personal">Acesse o catalogo</button>
-            </div>
+        <div class="tecnologias">
+          <img src="./images/css.jpg" class="imgtech" alt="">
+          <aside>
+            <h3>CSS</h3>
+            <p style="max-width: 20ch;">É usado para estilizar elementos escritos em uma linguagem de marcação como HTML. O CSS separa o conteúdo da representação visual do site. Utilizando o CSS é possível alterar a cor do texto e do fundo,mudar estrtura visual do site ! </p>
+          </aside>
         </div>
-    </main>
+        <div class="tecnologias"><img src="./images/javascript.jpg" class="imgtech" alt="">
+          <aside>
+            <h3>JavaScript</h3>
+            <p style="max-width: 20ch;"> o JavaScript é uma linguagem de programação orientada a objetos ela é responsavel por tonrnar todo site funcional</p>
+          </aside>
+        </div>
+        <div class="tecnologias"><img src="./images/javascript.jpg" class="imgtech" alt="">
+          <aside>
+            <h3>React.js</h3>
+            <p style="max-width: 20ch;"> o React.js é uma biblioteca do Javascript permite desenvolver aplicações em menor tempo.</p>
+          </aside>
+        </div>
+        <button class="fecharmodal">Voltar</button>
+      </nav>
+    </nav>
+  </section>
+  <section class="sectionprojetos">
+    <nav>
+      <nav class="conteudoprojetos">
+        <img src="./images/javascript.jpg" class="imgpro" alt="">
+        <div>
+          <h3>React.js</h3>
+          <p style="max-width: 20ch;"> o React.js é uma biblioteca do Javascript permite desenvolver aplicações em menor tempo.</p>
+          <ul>
+            <li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Repositorio</a></li>
+            <li>github</li>
+          </ul>
+        </div>
+        <img src="./images/javascript.jpg" class="imgpro" alt="">
+        <div>
+          <h3>React.js</h3>
+          <p style="max-width: 20ch;"> o React.js é uma biblioteca do Javascript permite desenvolver aplicações em menor tempo.</p>
+          <ul>
+            <li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Repositorio</a></li>
+            <li>github</li>
+          </ul>
+        </div><img src="./images/javascript.jpg" class="imgpro" alt="">
+        <div>
+          <h3>React.js</h3>
+          <p style="max-width: 20ch;"> o React.js é uma biblioteca do Javascript permite desenvolver aplicações em menor tempo.</p>
+          <ul>
+            <li><a href="https://origamid.com/projetos/flexbox-guia-completo/">Repositorio</a></li>
+            <li>github</li>
+          </ul>
+        </div>
+
+
+        <button class="fecharmodalprojetos">Voltar</button>
+      </nav>
+    </nav>
+  </section>
+  <script src="index.js"></script>
 </body>
-</html> 
+
+</html>
