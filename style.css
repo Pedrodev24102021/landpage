@@ -1,159 +1,208 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2? família=Amargo&família=Raleway:wght@200&display=swap');
+body{
+  background: #33CCCC; 
+  animation: color 10s infinite linear;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-family: 'Raleway';
+  
+}@keyframes color {
+    0%   { background: #222; }
+    20%  { background: #333; }
+    40%  { background: #555; }
+    60%  { background: #555; }
+    80%  { background: #333; }
+    100% { background: #222; }
+  }
+header{
+  color: aliceblue;
+  max-width: 100%;
+  background-color: #555;
+}
+#nav{
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+}
+li{
+  list-style: none;
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 800;
+}
+.main{
+  margin:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.conteudo{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 4%;
+}
+#img{
+  margin: 0px;
+  height: 500px;
+  max-width: 500px;
+}
+#saida{
+  max-width: 60ch;
+  color: aliceblue;
+  font-weight: 900;
+}
+.tecnologias{
+ display: flex;
+ margin-left: 10px;
 
-/* Zerando CSS */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+}
+section{
+  margin-top: 3%;
+  text-align: center;
+}
+.sectiontech{
+  color: aliceblue;
+}
+.sectionprojetos{
+  color: aliceblue;
+}
+.conteudotech{
+  display: none;
+  }
+  .conteudoprojetos{
+    display: none;
+  }
+.imgtech{
+  max-width: 150px;
+  max-height: 200px;
+}
+.imgpro{
+  max-width: 300px;
+  max-height: 300px;
+  margin: 10px 10px 0px 2px;
+}
+.activeprojetos{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  animation: color 10s infinite linear;
+  z-index: 2;
+}
+.active{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+  animation: color 10s infinite linear;
+  z-index: 2;
+}.fecharmodal , .fecharmodalprojetos{
+  position: absolute;
+  right: 2%;
+  bottom: 2%;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border:none;
+  font-family:'Raleway' ;
+  font-weight: 800;
+  font-size: 20px;
+  cursor: pointer;
+}
+.fecharmodal:hover, .fecharmodalprojetos:hover{
+  background-color: red;
+  color: aliceblue;
 }
 
-
-/* Fundo-tela */
-
-html {
-    width: 100vw;
-    height: 100vh;
-    font-size: 62.5%;
-    color:rgb(19, 85, 19);
-    font-family: 'Lato', sans-serif;
+#btn-mobile{
+  display: none;
 }
+@media (max-width:900px) {
 
-body {
-    background-image:url(doctor-examining-female-patients-face-from-cosmetic-treatment.jpg);
-    background-position: center center;
-    background-size: cover; 
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-}
-
-/* Menu - Header - NavBar */
-
-header {
-    width: 100%;
-    height: 7vh;
-    background-color: rgba(22, 22, 22, 0.2);
-}
-
-.menu-content {
-    text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.8rem;
-}
-
-.logo {
-    font-size: 1.8rem;
-    letter-spacing: 0.4rem;
+  #btn-mobile{
+    display: block;
+    font-size: 15px;
+    padding: 10px;
     cursor: pointer;
-}
-
-.menu-content .list-itens {
-    display: flex;
-    list-style: none;
-    gap: 10px;
-}
-
-.menu-content .list-itens a {
-    text-decoration: none;
-    color: white;
-    padding: 1.5rem;
-    transform: 2ms ease-in;
-    position: relative;
-}
-
-
-.menu-content .list-itens a:before {
-    content: ' ';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 0px;
-    height: 1px;
-    background-color: rgb(219, 219, 219);
-    transition: all 1.5s ease; 
-}
-
-.menu-content .list-itens a:hover:before {
-    width: 100%;
-}
-
-/* Centro - Conteudo Principal */
-
-main {
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Textos conteudo principal */
-
-.primary-text {
-    width: 850px;
-    font-size: 5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.second-text {
-    margin-bottom: 7rem;
-    font-size: 2rem;
-    color: rgb(255, 247, 247);
-    text-transform: uppercase;
-}
-
-/* Botões */
-
-
-.btns {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.btns button {
-    width: 250px;
-    height: 60px;
-    cursor: pointer;
-    border: 1px solid white;
-    color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    letter-spacing: 0.2rem;
-    border-radius: 20px;
-    position: relative;
-    transition: 1.5s;
-}
-
-.btns button:hover {
-    color: rgb(15, 94, 41);
+    border-radius: 2px;
     border: none;
-}
-
-.btns button:before {
-    content: ' ';
-    border-radius: 20px;
-    bottom: 0;
-    left: 0;
+    font-family: 'Raleway';
+    font-weight: 800;
+  }
+  #btn-mobile:hover{
+    color: aliceblue;
+    background-color:#27ae60 ;
+  }
+  #menu{
+    display: none;
     position: absolute;
-    width: 0;
-    height: 60px;
-    background-color: rgba(25, 92, 61, 0.911);
-    z-index: -1;
-    transition: 1s;
-}
-
-.btns button:hover:before {
     width: 100%;
+    top: 50px;
+    right: 0px;
+   background: #555; 
+   height: 100vh;
+   transition: .8s;
+   z-index: 1;
+  }
+  #nav.activemenu #menu {
+    display: block;
+  }
+  #menu li{
+    padding:20px;
+    margin:0;
+  }
+  .conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 4%;
+  }
+  #saida{
+    margin: 0 10px;
+    max-width: 20ch;
+    color: aliceblue;
+    font-weight: 900;
+  }
+  .active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    width: 100%;
+    background-color: #222;
+    animation: color 10s infinite linear;
+    z-index: 2;
+  }
+  .activeprojetos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    height: 1000px;
+    width: 100%;
+    background-color: #222;
+    animation: color 10s infinite linear;
+    z-index: 2;
+  }
 }
